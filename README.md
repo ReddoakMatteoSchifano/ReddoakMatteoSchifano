@@ -19,3 +19,4 @@ Building modern web applications with TypeScript across the entire stack.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matteo-vincenzo-schifano/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:matteo.vincenzo.schifano@gmail.com)
+[![Website](https://img.shields.io/badge/matteoschifano.it-000000?style=flat&logo=safari&logoColor=white)](https://matteoschifano.it)
