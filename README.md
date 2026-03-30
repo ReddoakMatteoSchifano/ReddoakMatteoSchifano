@@ -21,17 +21,17 @@ I'm currently building **Yourang** — an AI-powered platform for voice agents, 
 
 ### Week of Mar 24–30, 2026
 
-**Call Center & Campaigns** — Shipped the Predictive Dialer R1: campaign management, orchestration, stats with charts, CSV export, caller ID handling, and contact list execution. Added label management for verified phone numbers and improved the campaign detail page with tabbed navigation.
+**Call Center & Campaigns** — Shipped the Predictive Dialer R1 with campaign management and orchestration. Built the campaign detail page with tabbed navigation, contact list popover, and route constants. Added label management for verified phone numbers with i18n support.
 
-**Workflow Engine** — Implemented the If-Criteria node for conditional workflow branching, including validation, i18n, and a fix for parallel paths swallowing shared downstream nodes. Optimized criteria evaluation polling.
+**Workflow Engine** — Implemented the If-Criteria node for conditional workflow branching with validation and i18n. Fixed parallel If-Criteria paths swallowing shared downstream nodes. Optimized criteria evaluation polling by passing friendly_id through the pipeline.
 
-**Reservations** — Fixed calendar sync issues (mini calendar, day view status filter, sidebar flicker, week view overlap). Added a copy-paste UX for schedule configuration and an "Apply to all days" popover.
+**Reservations** — Built copy-paste UX for schedule configuration and "Apply to all days" popover. Fixed handlePasteSchedule forcing target day open.
 
-**Payments & Invoicing** — Integrated Stripe tax data into payment processing and Fattura in Cloud invoice generation. Fixed promo code redemption and payment cancellation flows.
+**Payments & Invoicing** — Integrated Stripe tax data into payment processing and Fattura in Cloud invoice generation with gross prices. Fixed promo code redemption and added cancellation selector on payment cancel.
 
-**Infrastructure** — Switched default telephony provider to Twilio, removed Datadog RUM, added Sentry debug flag, improved CI/CD workflows, and set up comprehensive Claude Code configuration with 17 skills.
+**Infrastructure** — Switched default provider to Twilio with data migration. Removed Datadog RUM integration. Set up release workflow with proper token permissions. Added Claude agent definitions for development tasks.
 
-**Side project: Ferie** — Added personal registry (anagrafica), structured address fields, permesso hours tracking with CSV export, and admin notifications.
+**Side project: Ferie** — Added personal registry (anagrafica) with structured address fields, admin notifications, and permesso hours tracking with CSV export. Fixed lunch break subtraction in hours calculation.
 
 ## Connect
 
