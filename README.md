@@ -19,6 +19,12 @@ Building modern web applications with TypeScript across the entire stack.
 
 I'm currently building **Yourang** — an AI-powered platform for voice agents, call center automation, and event reservation management. The stack is Python (FastAPI) on the backend and Next.js/React on the frontend, with real-time workflow orchestration, Stripe billing, and Twilio telephony integration. It's a complex product that touches AI, payments, scheduling, and multi-tenant SaaS — and I work across the full stack daily.
 
+### Week of Apr 4–10, 2026
+
+**Contact Lists Overhaul (Yourang)** — Tackled seven improvements to the contact lists module across the full stack. On the FastAPI side, extended the `GET /lists/{id}/contacts` endpoint with server-side sorting using the existing `-prefix` convention, then forwarded the params through the service and selector layers and covered the new behavior with integration tests. On the frontend, debugged a TanStack Table state desync where `table.setPageSize()` was never called, causing the rows-per-page selector to show a stale value silently. Also implemented auto-navigation into a newly created list, redesigned the page header with a subtitle hint, replaced raw `<textarea>` elements with the shared `Textarea` design-system component, and capped both tables to viewport height with internal scrolling. Added schema validation tests to keep the frontend API types in sync with the backend response contract.
+
+**Codebase Refactor (Yourang)** — Removed the "actions" feature entirely from the codebase. Required careful tracing of all usages across routes, services, and frontend components to ensure no dead references or broken flows were left behind.
+
 ### Week of Mar 24–30, 2026
 
 **Call Center & Campaigns** — Shipped the Predictive Dialer R1 with campaign management and orchestration. Built the campaign detail page with tabbed navigation, contact list popover, and route constants. Added label management for verified phone numbers with i18n support.
